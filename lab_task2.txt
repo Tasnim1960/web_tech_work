@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Task</title>
+</head>
+
+<body>
+
+    <!-- ===== Part A: Lists ===== -->
+
+    <h2 id="lists" title="Practice Task">Programming Languages</h2>
+
+    <!-- Unordered list -->
+    <ul class="web tech">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>C++</li>
+    </ul>
+
+    <!-- Ordered list -->
+    <h3>Steps to Build a Website</h3>
+    <ol>
+        <li>Plan the website</li>
+        <li>Create HTML structure</li>
+        <li>Add content</li>
+        <li>Style the page</li>
+        <li>Publish online</li>
+    </ol>
+
+    <!-- Description list -->
+    <h3>Web Technologies</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Structure of web pages</dd>
+
+        <dt>CSS</dt>
+        <dd>Design and layout</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Makes pages interactive</dd>
+    </dl>
+
+    <!-- ===== Part B: Links ===== -->
+
+    <h2>Links Section</h2>
+
+    <!-- External link opening in new tab -->
+    <a href="https://www.aiub.edu" target="_blank">
+        Visit My University Website
+    </a>
+
+    <br><br>
+
+    <!-- Internal link -->
+    <a href="#imageSection">Go to Image Section</a>
+
+    <!-- ===== Part C: Image ===== -->
+
+    <h2 id="imageSection">Image Section</h2>
+
+    <section>
+        <img src="https://via.placeholder.com/300"
+             alt="Sample image"
+             width="300">
+    </section>
+
+    <!-- ===== Student Info ===== -->
+
+    <p id="student">Student ID: 23-53730-3</p>
+
+</body>
+
+</html>

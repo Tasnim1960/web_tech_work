@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Registration form</title>
+
+
+</head>
+
+<body>
+
+    <h1>Registration form</h1>
+    <hr>
+
+    <form>
+    <label for="fullname">Full name:</label><br> <!--for attribute is mainly used in the <label> tag to connect a label with an input field.-->
+    <input type="text" id="fullname" placeholder="Enter your full name" required> <!--for in label = id in input-->
+    <br>
+    <br>
+    
+
+
+    <label for="email">Email address: </label><br>
+    <input type="text" id="email" name="email" placeholder="Enter your email address" required>
+    <br>
+    <br>
+
+    <label for="password">Password: </label><br>
+    <input type="text" id="password" name="password" placeholder="Enter your password" required>
+    <br>
+    <br>
+
+    <label>Gender: </label><br>
+    
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label><br>
+
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other">Other</label><br>
+
+    <br>
+    <br>
+
+    <label>Skills: </label><br>
+    
+    <input type="checkbox" id="c" name="skills" value="c">
+    <label for="c">C</label><br>
+
+    <input type="checkbox" id="c++" name="skills" value="c++">
+    <label for="c">C++</label><br>
+
+    <input type="checkbox" id="java" name="skills" value="java">
+    <label for="c">java</label><br>
+
+    <input type="checkbox" id="c#" name="skills" value="c#">
+    <label for="">C#</label><br>
+
+    <input type="checkbox" id="python" name="skills" value="python">
+    <label for="c">Python</label><br>
+
+    <br>
+    <br>
+
+     <label for="department">Department:</label><br>
+        <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="cse">CSE</option>
+            <option value="eee">EEE</option>
+            <option value="ipe">IPE</option>
+            <option value="pharmacy">Pharmacy</option>
+            <option value="datascience">Data science</option>
+            <option value="bba">BBA</option>
+            <option value="english">English</option>
+            <option value="law">LAW</option>
+        </select>
+    
+    <br>
+    <br>
+
+    <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="10" cols="40" placeholder="Write your message"></textarea>
+
+        <br><br>
+
+      
+        <input type="submit" value="Register">
+
+    </form>
+    <hr>
+
+
+    <footer>
+            <p>@ 2026 Student Registration Index. All rights reserved.</p>
+        </footer>
+
+
+
+
+
+
+</body>
+</html>
