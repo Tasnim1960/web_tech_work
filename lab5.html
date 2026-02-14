@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Kaiser | Academic Profile</title>
+
+    <meta name="description" content="Personal academic profile of Kaiser including education background and contact information.">
+
+    <meta name="keywords" content="Kaiser, academic profile, student, computer science, education, contact form">
+
+    <meta name="author" content="Kaiser">
+
+</head>
+<body>
+
+    <header>
+        <h1>Kaiser</h1>
+        <nav>
+            <a href="#bio">Biography</a> |
+            <a href="#education">Education</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="bio">
+            <h2>Biography</h2>
+            <p>
+                I am a Computer Science student passionate about software development, web technologies, and game development. 
+                I aim to build efficient systems and creative digital solutions.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+
+            <table border="1">
+                <caption>Academic Qualifications</caption>
+
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>BSc in Computer Science</td>
+                        <td>American International University - Bangladesh</td>
+                        <td>2023 - Present</td>
+                        <td>CGPA 3.87</td>
+                    </tr>
+
+                    <tr>
+                        <td>Higher Secondary Certificate</td>
+                        <td>Sabujbagh Govt. college</td>
+                        <td>2021 - 2023</td>
+                        <td>GPA 5.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Secondary School Certificate</td>
+                        <td>Motijheel Model School</td>
+                        <td>2019 - 2021</td>
+                        <td>GPA 5.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name" maxlength="50"><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required placeholder="example@email.com"><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" 
+                       placeholder="01XXXXXXXXX"
+                       pattern="[0-9]{11}"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required placeholder="Write your message here..." maxlength="300"></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+                <input type="reset" value="Clear">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Kaiser. All rights reserved.</p>
+        <p>Email: kaiser@example.com</p>
+    </footer>
+
+</body>
+</html>

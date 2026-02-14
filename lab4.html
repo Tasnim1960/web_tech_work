@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Task 04 - HTML Forms</title>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <p>Gender:</p>
+
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male">
+                Male
+            </label><br>
+
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female">
+                Female
+            </label><br>
+
+            <label for="other">
+                <input type="radio" id="other" name="gender" value="other">
+                Other
+            </label><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="department">Department:</label><br>
+            <select id="department" name="department">
+                <option value="cse">Computer Science</option>
+                <option value="se">Software Engineering</option>
+                <option value="it">Information Technology</option>
+                <option value="eee">Electrical Engineering</option>
+            </select><br><br>
+
+            <p>Skills:</p>
+
+            <label for="html">
+                <input type="checkbox" id="html" name="skills" value="html">
+                HTML
+            </label><br>
+
+            <label for="css">
+                <input type="checkbox" id="css" name="skills" value="css">
+                CSS
+            </label><br>
+
+            <label for="javascript">
+                <input type="checkbox" id="javascript" name="skills" value="javascript">
+                JavaScript
+            </label><br>
+
+            <label for="csharp">
+                <input type="checkbox" id="csharp" name="skills" value="csharp">
+                C#
+            </label><br><br>
+
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
