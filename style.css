@@ -1,0 +1,33 @@
+body{
+    background-color:rgb(27, 90, 90) ;
+    h1{
+        color: bisque;
+        border-style: groove;
+        border-top-style: ridge;
+        border-radius:10px;
+        padding: 100px ;
+        border-left-width: 10px;
+        border-left: dotted;
+    }
+   
+#p1{
+    color: coral;
+
+}
+#p2{
+    color: pink;
+    
+}
+#p3{
+    color: rebeccapurple;
+    background-color: floralwhite;
+}
+
+.even{
+    background-color: aliceblue;
+}
+
+.odd{
+    background-color: blue;
+}
+}
