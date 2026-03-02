@@ -1,0 +1,51 @@
+/* Group Selector */
+h1, h2 {
+    color: darkblue;
+    font-size: 2rem; /* rem unit */
+    margin: 10px;
+}
+
+/* Descendant Selector */
+div p {
+    color: green;
+    font-size: 1.2em; /* em unit */
+}
+
+/* Percentage & vh */
+.box {
+    width: 50%;      /* % unit */
+    height: 20vh;    /* vh unit */
+    background-color: lightblue;
+    margin: 5%;
+    padding: 2rem;
+}
+
+/* Absolute Units */
+.absolute-box {
+    width: 300px;    /* px unit */
+    height: 5cm;     /* cm unit */
+    background-color: lightcoral;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid gray;
+    width: 200px;
+}
+
+/* Pseudo-Classes */
+a:hover {
+    color: red;
+}
+
+input[type="text"]:focus {
+    border-color: blue;
+    background-color: #f0f8ff;
+}
+
+button:active {
+    background-color: orange;
+}

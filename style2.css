@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ========================= */
+/* Part A: Box Model */
+/* ========================= */
+
+.box {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+}
+
+/* Default box sizing */
+.box1 {
+    padding: 10px;
+    border: 5px solid blue;
+    background-color: lightblue;
+}
+
+/* Larger spacing */
+.box2 {
+    padding: 20px;
+    border: 10px solid green;
+    margin: 40px;
+    background-color: lightgreen;
+}
+
+/* Part B: border-box */
+.box3 {
+    padding: 20px;
+    border: 10px solid red;
+    background-color: lightcoral;
+    box-sizing: border-box;
+}
+
+/* ========================= */
+/* Part C: Display Properties */
+/* ========================= */
+
+/* Block (default for div) */
+.block-example {
+    display: block;
+    background-color: yellow;
+    margin: 10px 0;
+}
+
+/* Inline */
+.inline-example {
+    display: inline;
+    background-color: orange;
+    padding: 5px;
+}
+
+/* Inline-Block */
+.inline-block-example {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background-color: pink;
+    margin: 10px;
+}
+
+/* Display None */
+.hidden-display {
+    display: none;
+}
+
+/* ========================= */
+/* Part D: Visibility vs Display */
+/* ========================= */
+
+.visibility-hidden {
+    visibility: hidden;
+    background-color: gray;
+}
+
+.display-none {
+    display: none;
+    background-color: black;
+    color: white;
+}
