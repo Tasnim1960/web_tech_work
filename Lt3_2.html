@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Task 03 - Arrays and Objects</title>
+</head>
+<body>
+
+<h1>Lab Task 03: Arrays and Basic Objects</h1>
+
+<h2>Part A: Arrays</h2>
+<div id="courses"></div>
+
+<h2>Part B: Array Operations</h2>
+<div id="arrayOps"></div>
+
+<h2>Part C: Basic Object</h2>
+<div id="studentInfo"></div>
+
+<h2>Part D: Array of Objects</h2>
+<div id="studentList"></div>
+
+<script>
+
+// ---------------- Part A: Arrays ----------------
+
+let courses = [
+    "Web Technologies",
+    "Data Structures",
+    "Algorithms",
+    "Computer Networks",
+    "Database Systems"
+];
+
+let courseOutput = "";
+
+// display courses using for loop
+for (let i = 0; i < courses.length; i++) {
+    courseOutput += courses[i] + "<br>";
+}
+
+// add new course
+courses.push("Artificial Intelligence");
+
+courseOutput += "<br><b>After Adding New Course:</b><br>";
+
+for (let i = 0; i < courses.length; i++) {
+    courseOutput += courses[i] + "<br>";
+}
+
+document.getElementById("courses").innerHTML = courseOutput;
+
+
+// ---------------- Part B: Array Operations ----------------
+
+let arrayOutput = "";
+
+arrayOutput += "Array Length: " + courses.length + "<br>";
+
+// remove last element
+courses.pop();
+
+// add new element at beginning
+courses.unshift("Software Engineering");
+
+arrayOutput += "<br><b>Final Array:</b><br>";
+
+for (let i = 0; i < courses.length; i++) {
+    arrayOutput += courses[i] + "<br>";
+}
+
+document.getElementById("arrayOps").innerHTML = arrayOutput;
+
+
+// ---------------- Part C: Basic Object ----------------
+
+let student = {
+    name: "Md Toufikul Islam",
+    id: "23-53730-3",
+    department: "CSE",
+    cgpa: 3.88
+};
+
+let studentOutput = `
+Name: ${student.name} <br>
+ID: ${student.id} <br>
+Department: ${student.department} <br>
+CGPA: ${student.cgpa}
+`;
+
+document.getElementById("studentInfo").innerHTML = studentOutput;
+
+
+// ---------------- Part D: Array of Objects ----------------
+
+let students = [
+    { name: "Md Toufikul Islam", id: "23-53730-3", department: "CSE", cgpa: 3.88 },
+    { name: "Rahim Ahmed", id: "23-50001-1", department: "CSE", cgpa: 3.50 },
+    { name: "Karim Hasan", id: "23-50002-2", department: "CSE", cgpa: 3.65 }
+];
+
+let listOutput = "";
+
+for (let i = 0; i < students.length; i++) {
+    listOutput += `
+    <b>Student ${i+1}</b><br>
+    Name: ${students[i].name}<br>
+    ID: ${students[i].id}<br>
+    Department: ${students[i].department}<br>
+    CGPA: ${students[i].cgpa}<br><br>
+    `;
+}
+
+document.getElementById("studentList").innerHTML = listOutput;
+
+</script>
+
+</body>
+</html>
