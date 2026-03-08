@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Manager</title>
+    <link rel="stylesheet" href="dom_style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Student Manager</h2>
+
+    <div class="row">
+        <input type="text" id="rollInput" placeholder="Enter roll number">
+        <input type="text" id="nameInput" placeholder="Enter student name">
+        <button id="addBtn" disabled>Add</button>
+    </div>
+
+    <div class="row">
+        <input type="text" id="searchInput" placeholder="Search student">
+    </div>
+
+    <div class="row">
+        <button id="sortBtn">Sort A-Z</button>
+        <button id="highlightBtn">Highlight First Student</button>
+    </div>
+
+    <ul id="studentList"></ul>
+
+    <p id="totalCount">Total students: 0</p>
+    <p id="attendanceCount">Present: 0, Absent: 0</p>
+
+</div>
+
+<script src="dom_script.js"></script>
+
+</body>
+</html>
