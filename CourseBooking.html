@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Portal</title>
+    <link rel="stylesheet" href="CourseBooking.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Learning Portal</h1>
+    </header>
+
+    <main class="container">
+
+        <fieldset class="panel">
+            <legend>Course Enrollment Panel</legend>
+
+            <p><strong>Course Name:</strong> JavaScript Basics</p>
+            <p><strong>Fee Per Seat:</strong> 1200 Tk</p>
+
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" value="1" min="1">
+
+            <p id="seatError"></p>
+            <p id="courseTotal">Total Course Fee: 1200 Tk</p>
+            <p id="discountMessage"></p>
+        </fieldset>
+
+        <fieldset class="panel">
+            <legend>Enrollment Details Form</legend>
+
+            <form id="enrollmentForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" placeholder="Enter your full name">
+
+                <label for="email">Contact Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="classType">Class Type:</label>
+                <select id="classType">
+                    <option value="online">Online Class</option>
+                    <option value="campus">On-Campus Class</option>
+                </select>
+
+                <p id="finalAmount">Final Payable Amount: 1300 Tk</p>
+
+                <label>
+                    <input type="checkbox" id="confirmCheck">
+                    I confirm my enrollment details are correct
+                </label>
+
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+        </fieldset>
+
+    </main>
+
+    <footer>
+        <p>All Rights Reserved 2026</p>
+    </footer>
+
+    <script src="CourseBooking.js"></script>
+</body>
+</html>
