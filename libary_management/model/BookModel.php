@@ -2,6 +2,8 @@
 
 require_once "../config/db.php";
 
+
+
 function addBook($title, $author, $category, $status){
     global $conn;
 
